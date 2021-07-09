@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.resources.features.Test</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">4</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-07-09 01:46:27 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:18]"><span>[1.1:18]</span> <span>the user is not on the list</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2.1:31]"><span>[2.1:31]</span> <span>Create User</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3.1:44]"><span>[3.1:44]</span> <span>the user is on the list</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4.1:58]"><span>[4.1:58]</span> <span>the user is not on the list</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/resources/features/Test.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test API Reqres</span>
+          <span class="feature-description">I want to use this template for my feature file</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">ListUsers</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:18]</span>
+                <span class="scenario-name">the user is not on the list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref failed">18</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [run] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.18">&gt;&gt;&gt;&gt; js failed:
+01: (function fn(){
+02: 	var config = {
+03:    baseURL : &#39;https://reqres.in/api&#39;
+04:   }
+05: 
+06:   karate.configure(&#39;connectTimeout&#39;, 5000);
+07:   karate.configure(&#39;readTimeout&#39;, 5000);
+08: 
+09:   return config;
+10:  }  
+11: 	
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:0 Expected ) but found }
+})
+^
+Unnamed:12:1 Expected ; but found )
+})
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:287)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:362)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:388)
+13:46:27.330 scenario [run] failed
+&gt;&gt;&gt;&gt; js failed:
+01: (function fn(){
+02: 	var config = {
+03:    baseURL : &#39;https://reqres.in/api&#39;
+04:   }
+05: 
+06:   karate.configure(&#39;connectTimeout&#39;, 5000);
+07:   karate.configure(&#39;readTimeout&#39;, 5000);
+08: 
+09:   return config;
+10:  }  
+11: 	
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:0 Expected ) but found }
+})
+^
+Unnamed:12:1 Expected ; but found )
+})
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:287)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:362)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:388)
+
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">CrerateUser</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:31]</span>
+                <span class="scenario-name">Create User</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref failed">31</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [run] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.31">&gt;&gt;&gt;&gt; js failed:
+01: (function fn(){
+02: 	var config = {
+03:    baseURL : &#39;https://reqres.in/api&#39;
+04:   }
+05: 
+06:   karate.configure(&#39;connectTimeout&#39;, 5000);
+07:   karate.configure(&#39;readTimeout&#39;, 5000);
+08: 
+09:   return config;
+10:  }  
+11: 	
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:0 Expected ) but found }
+})
+^
+Unnamed:12:1 Expected ; but found )
+})
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:287)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:362)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:388)
+13:46:27.341 scenario [run] failed
+&gt;&gt;&gt;&gt; js failed:
+01: (function fn(){
+02: 	var config = {
+03:    baseURL : &#39;https://reqres.in/api&#39;
+04:   }
+05: 
+06:   karate.configure(&#39;connectTimeout&#39;, 5000);
+07:   karate.configure(&#39;readTimeout&#39;, 5000);
+08: 
+09:   return config;
+10:  }  
+11: 	
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:0 Expected ) but found }
+})
+^
+Unnamed:12:1 Expected ; but found )
+})
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:287)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:362)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:388)
+
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.1:44]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">UserExist</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.1:44]</span>
+                <span class="scenario-name">the user is on the list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.44">
+      <div class="step-ref failed">44</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [run] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.44">&gt;&gt;&gt;&gt; js failed:
+01: (function fn(){
+02: 	var config = {
+03:    baseURL : &#39;https://reqres.in/api&#39;
+04:   }
+05: 
+06:   karate.configure(&#39;connectTimeout&#39;, 5000);
+07:   karate.configure(&#39;readTimeout&#39;, 5000);
+08: 
+09:   return config;
+10:  }  
+11: 	
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:0 Expected ) but found }
+})
+^
+Unnamed:12:1 Expected ; but found )
+})
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:287)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:362)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:388)
+13:46:27.351 scenario [run] failed
+&gt;&gt;&gt;&gt; js failed:
+01: (function fn(){
+02: 	var config = {
+03:    baseURL : &#39;https://reqres.in/api&#39;
+04:   }
+05: 
+06:   karate.configure(&#39;connectTimeout&#39;, 5000);
+07:   karate.configure(&#39;readTimeout&#39;, 5000);
+08: 
+09:   return config;
+10:  }  
+11: 	
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:0 Expected ) but found }
+})
+^
+Unnamed:12:1 Expected ; but found )
+})
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:287)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:362)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:388)
+
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.1:58]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">UserNotExist</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.1:58]</span>
+                <span class="scenario-name">the user is not on the list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [run] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.58">&gt;&gt;&gt;&gt; js failed:
+01: (function fn(){
+02: 	var config = {
+03:    baseURL : &#39;https://reqres.in/api&#39;
+04:   }
+05: 
+06:   karate.configure(&#39;connectTimeout&#39;, 5000);
+07:   karate.configure(&#39;readTimeout&#39;, 5000);
+08: 
+09:   return config;
+10:  }  
+11: 	
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:0 Expected ) but found }
+})
+^
+Unnamed:12:1 Expected ; but found )
+})
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:287)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:362)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:388)
+13:46:27.358 scenario [run] failed
+&gt;&gt;&gt;&gt; js failed:
+01: (function fn(){
+02: 	var config = {
+03:    baseURL : &#39;https://reqres.in/api&#39;
+04:   }
+05: 
+06:   karate.configure(&#39;connectTimeout&#39;, 5000);
+07:   karate.configure(&#39;readTimeout&#39;, 5000);
+08: 
+09:   return config;
+10:  }  
+11: 	
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:0 Expected ) but found }
+})
+^
+Unnamed:12:1 Expected ; but found )
+})
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:287)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:362)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:388)
+
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
